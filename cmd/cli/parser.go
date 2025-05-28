@@ -3,10 +3,10 @@ package cli
 import (
 	"fmt"
 
-	"github.com/faelmori/cleandgo"
 	"github.com/spf13/cobra"
 
 	gl "github.com/faelmori/cleandgo/logger"
+	t "github.com/faelmori/cleandgo/types"
 	vs "github.com/faelmori/cleandgo/version"
 )
 
@@ -29,7 +29,7 @@ func parseCommand() *cobra.Command {
 		}, false),
 		Version: vs.GetVersion(),
 		Run: func(cmd *cobra.Command, args []string) {
-			ft, ftErr := cleandgo.NewFileTree(treeFileSource, composerTargetPath, printTree, nil, debug)
+			ft, ftErr := t.NewFileTree(treeFileSource, composerTargetPath, printTree, nil, debug)
 			if ftErr != nil {
 				gl.Log("error", fmt.Sprintf("Failed to create file tree: %s", ftErr))
 				return

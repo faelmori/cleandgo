@@ -1,0 +1,38 @@
+📂 src/main/java/com/seuProjeto
+ ├── 📂 config          # Configurações gerais (Banco, WebClient, etc.)
+ ├── MongoConfig.java
+ ├── SQLServerConfig.java
+ ├── FastChannelClient.java
+ │
+ ├── 📂 integration     # Comunicação externa com APIs (B2B/B2C, ERP, FastChannel)
+ │    ├── FastChannelService.java
+ │    ├── ERPIntegrationService.java
+ │    ├── WebhookListener.java
+ │
+ ├── 📂 persistence     # Camada de persistência (MongoDB e SQL Server)
+ │    ├── repository
+ │    │   ├── MongoRepository.java
+ │    │   ├── SQLRepository.java
+ │    ├── entity
+ │    │   ├── PedidoEntity.java
+ │    │   ├── LogEntity.java
+ │
+ ├── 📂 service         # Lógica de negócio (Processamento assíncrono)
+ │    ├── PedidoService.java
+ │    ├── SyncService.java
+ │    ├── BackgroundTasks.java
+ │
+ ├── 📂 utils           # Utilitários, helpers e funções auxiliares
+ │    ├── JsonParser.java
+ │    ├── Logger.java
+ │    ├── DateUtils.java
+ │
+ ├── 📂 controller      # Exposição de APIs internas e escutas de webhook
+ │    ├── PedidoController.java
+ │    ├── WebhookController.java
+ │
+ ├── 📂 jobs            # Processos recorrentes assíncronos (Worker threads, schedulers)
+ │    ├── SyncScheduler.java
+ │    ├── PedidoProcessor.java
+ │
+ ├── Application.java   # Classe principal (entry point)

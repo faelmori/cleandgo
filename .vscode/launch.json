@@ -10,12 +10,13 @@
             "request": "launch",
             "mode": "auto",
             "program": "${workspaceFolder}/cmd",
+            "cwd": "${workspaceFolder}",
             "args": [
                 "parse",
                 "-s",
-                "/srv/apps/RAFA-MORI/pulse-hub/tests/tree_test.txt",
+                "./tests/tree_views/tree_test.txt",
                 "-c",
-                "/srv/apps/RAFA-MORI/pulse-hub/tests/BORA",
+                "./tests/composer_target",
                 "-d",
             ],
         }
