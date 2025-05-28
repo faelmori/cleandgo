@@ -1,4 +1,4 @@
-![CleandGO Banner](https://github.com/faelmori/cleandgo/assets/top_banner_a.png)
+![CleandGO Banner](https://github.com/faelmori/cleandgo/blob/ab6098d7a1f2a751dc4e043e461bbca35aee6e90/docs/assets/top_banner_a.png)
 
 # **CleandGO** 🚀🌳  
 **Conversão de treeviews visuais em estruturas organizadas de arquivos**  
