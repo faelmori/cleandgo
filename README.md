@@ -1,41 +1,157 @@
-![CleandGO Banner](https://github.com/faelmori/cleandgo/blob/ab6098d7a1f2a751dc4e043e461bbca35aee6e90/docs/assets/top_banner_a.png)
+![CleandGO Banner](docs/assets/top_banner_a.png)
 
-# **CleandGO** 🚀🌳  
-**Conversão de treeviews visuais em estruturas organizadas de arquivos**  
+---
 
-## **📜 Sobre o projeto**  
-O **CleandGO** é um parser avançado para treeviews visuais estruturadas. Ele interpreta, salva, e converte essa estrutura em arquivos e pastas organizados, permitindo **automatização da construção de hierarquias de diretórios**.  
+**A powerful parser for visual treeviews, converting them into organized file structures.**
 
-## **🔧 Principais Recursos**  
-✅ **Parser inteligente de estruturas de árvore**  
-✅ **Serialização e armazenamento de versões processadas**  
-✅ **Criação automática de arquivos e diretórios**  
-✅ **Backup da treeview para recuperação futura**  
-✅ **Suporte a diferentes formatos de entrada**  
+---
 
-## **🚀 Instalação**  
-### **Linux/Mac**  
+## **Table of Contents**
+
+1. [About the Project](#about-the-project)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+    - [CLI](#cli)
+    - [Examples](#examples)
+5. [Roadmap](#roadmap)
+6. [Contributing](#contributing)
+7. [Contact](#contact)
+
+---
+
+## **About the Project**
+
+CleandGO is an advanced parser for structured visual treeviews. It interprets, saves, and converts these structures into organized files and directories, enabling **automation of directory hierarchy creation**.
+
+**Why CleandGO?**
+
+- 🌟 **Smart Parsing**: Efficiently processes treeview structures.
+- 💾 **Serialization and Backup**: Save and recover processed versions.
+- 📂 **Automatic File and Directory Creation**: Build hierarchies effortlessly.
+- 🔄 **Flexible Input Formats**: Supports various input formats.
+
+---
+
+## **Features**
+
+✅ **Intelligent Treeview Parsing**:
+
+- Processes complex treeview structures.
+- Handles diverse input formats.
+
+✅ **Serialization and Backup**:
+
+- Save processed versions for future use.
+- Recover treeview structures easily.
+
+✅ **Automated File and Directory Creation**:
+
+- Generates organized hierarchies.
+- Ensures consistency and accuracy.
+
+✅ **Flexible Input Support**:
+
+- Compatible with multiple formats.
+
+---
+
+## **Installation**
+
+### **Linux/Mac**
+
 ```bash
 make install
 ```
-### **Windows**  
+
+### **Windows**
+
 ```powershell
 .\install.bat
 ```
 
-## **🛠 Uso básico**  
-```bash
-cleandgo parse --source tree_views/tree_test.txt
-```
-Isso **processa a treeview e transforma em arquivos e pastas válidos**.  
+---
 
-## **⚙️ Exemplos de Comandos**  
+## **Usage**
+
+### CLI
+
+Here are some examples of commands you can execute with CleandGO’s CLI:
+
 ```bash
+# Parse a treeview file
+cleandgo parse --source tree_views/tree_test.txt
+
+# Backup a treeview file
 cleandgo backup --tree tree_views/tree_test.txt
-cleandgo generate --output /meu_projeto
+
+# Generate files and directories
+cleandgo generate --output /my_project
+
+# Serialize a processed version
 cleandgo serialize --store version_1.clgo
 ```
 
-## **🤝 Contribuição**  
-Esse projeto está aberto para melhorias!  
-**Feedbacks, issues e PRs são super bem-vindos**. 🚀  
+---
+
+## **Examples**
+
+### **1. Parse a Treeview File**
+
+```bash
+cleandgo parse --source tree_views/tree_test.txt
+```
+
+This processes the treeview and transforms it into valid files and directories.
+
+### **2. Backup a Treeview File**
+
+```bash
+cleandgo backup --tree tree_views/tree_test.txt
+```
+
+This creates a backup of the treeview for future recovery.
+
+### **3. Generate Files and Directories**
+
+```bash
+cleandgo generate --output /my_project
+```
+
+This generates organized files and directories based on the treeview structure.
+
+### **4. Serialize a Processed Version**
+
+```bash
+cleandgo serialize --store version_1.clgo
+```
+
+This saves the processed version for future use.
+
+---
+
+## **Roadmap**
+
+🔜 **Upcoming Features**:
+
+- Support for additional input formats.
+- Enhanced treeview visualization.
+- Advanced configuration options.
+
+---
+
+## **Contributing**
+
+Contributions are welcome! Feel free to open issues or submit pull requests. Check out the [Contributing Guide](docs/CONTRIBUTING.md) for more details.
+
+---
+
+## **Contact**
+
+💌 **Developer**:
+
+[Byte Sleuth Team](mailto:faelmori@gmail.com)
+
+💼 [Follow me on GitHub](https://github.com/faelmori)
+
+We’re open to new collaborations and feedback. If you find this project interesting, don’t hesitate to reach out!
