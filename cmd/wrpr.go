@@ -15,7 +15,9 @@ type CleandGO struct {
 	printBanner   bool
 }
 
-func (m *CleandGO) Alias() string { return "" }
+func (m *CleandGO) Alias() string {
+	return ""
+}
 func (m *CleandGO) ShortDescription() string {
 	return "CleandGO is a minimalistic backend service with Go."
 }
@@ -26,7 +28,9 @@ func (m *CleandGO) Usage() string {
 	return "cleandgo [command] [args]"
 }
 func (m *CleandGO) Examples() []string {
-	return []string{"cleandgo start -p ':8080' -b '0.0.0.0' -n 'MyService' -d"}
+	return []string{"cleandgo -s 'tree_view.txt' -c '/my/composer/target/path' --onlyDirectories",
+		"cleandgo -s 'tree_view.txt' -c '/my/composer/target/path' --onlyFiles",
+		"cleandgo -s 'tree_view.txt' -c '/my/composer/target/path' -o 'my_log_file.json'"}
 }
 func (m *CleandGO) Active() bool {
 	return true
@@ -34,7 +38,9 @@ func (m *CleandGO) Active() bool {
 func (m *CleandGO) Module() string {
 	return "cleandgo"
 }
-func (m *CleandGO) Execute() error { return m.Command().Execute() }
+func (m *CleandGO) Execute() error {
+	return m.Command().Execute()
+}
 func (m *CleandGO) Command() *cobra.Command {
 	gl.Log("debug", "Starting CleandGO CLI...")
 
@@ -49,7 +55,7 @@ func (m *CleandGO) Command() *cobra.Command {
 		}, m.printBanner),
 	}
 
-	rtCmd.AddCommand(cc.ServiceCmdList()...)
+	rtCmd.AddCommand(cc.ParserCmdList()...)
 	rtCmd.AddCommand(vs.CliCommand())
 
 	// Set usage definitions for the command and its subcommands
@@ -79,7 +85,6 @@ func (m *CleandGO) concatenateExamples() string {
 	}
 	return examples
 }
-
 func RegX() *CleandGO {
 	var printBannerV = os.Getenv("GOBEMIN_PRINT_BANNER")
 	if printBannerV == "" {

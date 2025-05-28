@@ -19,7 +19,7 @@ import (
 const moduleAlias = "CleandGO"
 const moduleName = "cleandgo"
 const gitModelUrl = "https://github.com/faelmori/" + moduleName + ".git"
-const currentVersionFallback = "v1.0.1" // First version with the version file
+const currentVersionFallback = "v0.0.1" // First version with the version file
 
 type Service interface {
 	GetLatestVersion() (string, error)
