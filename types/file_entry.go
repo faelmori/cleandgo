@@ -247,3 +247,15 @@ func (fe *FileEntry) String() string {
 		}(),
 		fe.ModifiedBy, fe.Permissions, fe.Checksum, fe.Comments)
 }
+func (fe *FileEntry) GetPath() string {
+	if fe.Parent == nil {
+		return fe.Name // If no parent, return just the name
+	}
+	return fmt.Sprintf("%s/%s", fe.Parent.GetPath(), fe.Name) // Construct path from parent
+}
+func (fe *FileEntry) GetParent() it.IFileEntry {
+	if fe.Parent == nil {
+		return nil // If no parent, return nil
+	}
+	return fe.Parent // Return the parent entry
+}

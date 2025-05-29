@@ -21,4 +21,5 @@ type IFileTree interface {
 	SetMaxDepth(depth int)
 	GetRootID() uuid.UUID
 	SetRootID(id uuid.UUID)
+	GetFileTreeType() any
 }

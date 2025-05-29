@@ -446,6 +446,10 @@ func (ft *FileTree) GetFilesIcons() []string {
 func (ft *FileTree) GetDrawedMap() map[string]string {
 	return ft.DrawedMap
 }
+func (ft *FileTree) GetFileTreeType() any {
+	return ft
+}
+
 func ParseFieldsFromTreeView(line string, ft it.IFileTree) (it.IFileEntry, error) {
 	// Verifica se é um diretório ou arquivo pelo último campo
 	entryType := "unknown"

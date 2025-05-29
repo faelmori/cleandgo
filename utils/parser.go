@@ -2,7 +2,6 @@ package utils
 
 import (
 	"fmt"
-	"os"
 	"regexp"
 	"strings"
 
@@ -136,12 +135,6 @@ func ContainsIcon(line string, icons []string) bool {
 		if strings.Contains(line, icon) {
 			return true
 		}
-	}
-	return false
-}
-func CheckFileExists(path string) bool {
-	if _, err := os.Stat(path); err == nil {
-		return true
 	}
 	return false
 }

@@ -9,9 +9,11 @@ import (
 type IFileEntry interface {
 	GetID() uuid.UUID
 	GetParentID() uuid.UUID
+	GetParent() IFileEntry
 	GetType() string
 	GetName() string
 	GetOriginName() string
+	GetPath() string
 	GetDepth() int
 	GetSize() int64
 	GetCreatedAt() time.Time
