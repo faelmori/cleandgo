@@ -1,6 +1,6 @@
 module github.com/faelmori/cleandgo
 
-go 1.24.3
+go 1.24.4
 
 require github.com/faelmori/logz v1.2.0
 
