@@ -1,8 +1,8 @@
 package version
 
 import (
-	gl "github.com/faelmori/cleandgo/logger"
-	l "github.com/faelmori/logz"
+	gl "github.com/rafa-mori/cleandgo/logger"
+	l "github.com/rafa-mori/logz"
 
 	"github.com/spf13/cobra"
 
@@ -18,7 +18,7 @@ import (
 
 const moduleAlias = "CleandGO"
 const moduleName = "cleandgo"
-const gitModelUrl = "https://github.com/faelmori/" + moduleName + ".git"
+const gitModelUrl = "https://github.com/rafa-mori/" + moduleName + ".git"
 const currentVersionFallback = "v0.0.1" // First version with the version file
 
 type Service interface {

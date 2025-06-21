@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	it "github.com/faelmori/cleandgo/interfaces"
-	utl "github.com/faelmori/cleandgo/utils"
+	it "github.com/rafa-mori/cleandgo/interfaces"
+	utl "github.com/rafa-mori/cleandgo/utils"
 )
 
 type TreeComposer struct {

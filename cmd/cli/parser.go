@@ -5,9 +5,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	gl "github.com/faelmori/cleandgo/logger"
-	t "github.com/faelmori/cleandgo/types"
-	vs "github.com/faelmori/cleandgo/version"
+	gl "github.com/rafa-mori/cleandgo/logger"
+	t "github.com/rafa-mori/cleandgo/types"
+	vs "github.com/rafa-mori/cleandgo/version"
 )
 
 func ParserCmdList() []*cobra.Command {

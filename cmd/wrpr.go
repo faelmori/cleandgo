@@ -1,9 +1,9 @@
 package main
 
 import (
-	cc "github.com/faelmori/cleandgo/cmd/cli"
-	gl "github.com/faelmori/cleandgo/logger"
-	vs "github.com/faelmori/cleandgo/version"
+	cc "github.com/rafa-mori/cleandgo/cmd/cli"
+	gl "github.com/rafa-mori/cleandgo/logger"
+	vs "github.com/rafa-mori/cleandgo/version"
 	"github.com/spf13/cobra"
 
 	"os"

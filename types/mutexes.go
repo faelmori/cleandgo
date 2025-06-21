@@ -1,7 +1,7 @@
 package types
 
 import (
-	gl "github.com/faelmori/cleandgo/logger"
+	gl "github.com/rafa-mori/cleandgo/logger"
 
 	"sync"
 	"time"

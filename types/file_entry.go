@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	it "github.com/faelmori/cleandgo/interfaces"
-	gl "github.com/faelmori/cleandgo/logger"
+	it "github.com/rafa-mori/cleandgo/interfaces"
+	gl "github.com/rafa-mori/cleandgo/logger"
 
 	"github.com/google/uuid"
 )

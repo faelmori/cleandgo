@@ -1,8 +1,8 @@
 package main
 
 import (
-	gl "github.com/faelmori/cleandgo/logger"
-	l "github.com/faelmori/logz"
+	gl "github.com/rafa-mori/cleandgo/logger"
+	l "github.com/rafa-mori/logz"
 )
 
 var logger l.Logger

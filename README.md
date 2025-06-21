@@ -152,6 +152,6 @@ Contributions are welcome! Feel free to open issues or submit pull requests. Che
 
 [Byte Sleuth Team](mailto:faelmori@gmail.com)
 
-💼 [Follow me on GitHub](https://github.com/faelmori)
+💼 [Follow me on GitHub](https://github.com/rafa-mori)
 
 We’re open to new collaborations and feedback. If you find this project interesting, don’t hesitate to reach out!

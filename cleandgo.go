@@ -1,9 +1,9 @@
 package cleandgo
 
 import (
-	it "github.com/faelmori/cleandgo/interfaces"
-	t "github.com/faelmori/cleandgo/types"
-	l "github.com/faelmori/logz"
+	it "github.com/rafa-mori/cleandgo/interfaces"
+	t "github.com/rafa-mori/cleandgo/types"
+	l "github.com/rafa-mori/logz"
 	"github.com/google/uuid"
 )
 

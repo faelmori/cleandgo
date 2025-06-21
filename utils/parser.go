@@ -7,8 +7,8 @@ import (
 
 	"github.com/google/uuid"
 
-	it "github.com/faelmori/cleandgo/interfaces"
-	gl "github.com/faelmori/cleandgo/logger"
+	it "github.com/rafa-mori/cleandgo/interfaces"
+	gl "github.com/rafa-mori/cleandgo/logger"
 )
 
 func SanitizeLineIcons(line string, directoriesIcons, filesIcons []string) string {

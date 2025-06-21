@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"strings"
 
-	ci "github.com/faelmori/cleandgo/interfaces"
-	gl "github.com/faelmori/cleandgo/logger"
+	ci "github.com/rafa-mori/cleandgo/interfaces"
+	gl "github.com/rafa-mori/cleandgo/logger"
 	"github.com/pelletier/go-toml/v2"
 	"github.com/subosito/gotenv"
 	"gopkg.in/yaml.v3"

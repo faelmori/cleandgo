@@ -1,8 +1,8 @@
-module github.com/faelmori/cleandgo
+module github.com/rafa-mori/cleandgo
 
 go 1.24.4
 
-require github.com/faelmori/logz v1.2.0
+require github.com/rafa-mori/logz v1.3.0
 
 require (
 	github.com/mattn/go-colorable v0.1.14 // indirect

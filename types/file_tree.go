@@ -10,10 +10,10 @@ import (
 
 	"github.com/google/uuid"
 
-	it "github.com/faelmori/cleandgo/interfaces"
-	gl "github.com/faelmori/cleandgo/logger"
-	utl "github.com/faelmori/cleandgo/utils"
-	l "github.com/faelmori/logz"
+	it "github.com/rafa-mori/cleandgo/interfaces"
+	gl "github.com/rafa-mori/cleandgo/logger"
+	utl "github.com/rafa-mori/cleandgo/utils"
+	l "github.com/rafa-mori/logz"
 )
 
 type FileTree struct {
